@@ -170,7 +170,7 @@ btn_directorio.grid(row=0, column=2, padx=5, pady=5)
 lbl_extensiones = tk.Label(ventana, text="Extensiones permitidas (coma separadas):")
 lbl_extensiones.grid(row=1, column=0, padx=5, pady=5, sticky="e")
 entry_extensiones = tk.Entry(ventana, width=50)
-entry_extensiones.insert(0, ".txt, .log")
+entry_extensiones.insert(0, ".txt, .log, .js, .css, .html, .sass, .cs, .aspx, .ts,")
 entry_extensiones.grid(row=1, column=1, padx=5, pady=5)
 
 # Etiqueta y entrada para tamaño máximo (en MB)
@@ -184,6 +184,7 @@ entry_tamano.grid(row=2, column=1, padx=5, pady=5)
 lbl_omisiones = tk.Label(ventana, text="Omisiones (cadenas separadas por coma):")
 lbl_omisiones.grid(row=3, column=0, padx=5, pady=5, sticky="e")
 entry_omisiones = tk.Entry(ventana, width=50)
+entry_omisiones.insert(0,"node_modules,.git,")
 entry_omisiones.grid(row=3, column=1, padx=5, pady=5)
 
 # Etiqueta y entrada para archivo de salida
